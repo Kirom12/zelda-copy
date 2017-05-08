@@ -7,16 +7,16 @@ class PlayState
 
 	preload()
 	{
-		console.log("play - preload");
+		Log.Print("play - preload");
 	};
 
 	create()
 	{
-		console.log("play - create");
+		Log.Print("play - create");
 	};
 
 	update()
 	{
-		console.log("play - update")
+		
 	};
 }
