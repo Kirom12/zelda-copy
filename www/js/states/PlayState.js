@@ -12,13 +12,41 @@ class PlayState
 
 	create()
 	{
+<<<<<<< HEAD
 		this.Monster = new Monster(100,100);
 		
+=======
+		this.CreateMap();
+
+		this.Player = new Player(100, 100);
+
+>>>>>>> f04b75167dcae3781294e5ad0bf62870748344e5
 		Log.Print("play - create");
+	};
+
+	CreateMap()
+	{
+		this.Map = Game.Main.add.tilemap('main-map');
+
+		this.Map.addTilesetImage('world-tiles');
+
+		this.Layers = 
+		{
+			main : this.Map.createLayer('main'),
+			collision : this.Map.createLayer('collision')
+		}
+
+		this.Layers.main.setScale(Game.rescaleFactor);
+		this.Layers.main.resizeWorld();
+
 	};
 
 	update()
 	{
+<<<<<<< HEAD
 		this.Monster.update();
+=======
+		this.Player.update();
+>>>>>>> f04b75167dcae3781294e5ad0bf62870748344e5
 	};
 }

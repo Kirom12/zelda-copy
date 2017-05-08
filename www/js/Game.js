@@ -30,12 +30,25 @@ class Game
 
 	static preload()
 	{
+<<<<<<< HEAD
 		// Monster
 		Game.Main.load.spritesheet('monster', 'assets/img/ZeldaOverlordEnnemies.png',24,24);
+=======
+		//Map
+		Game.Main.load.tilemap('main-map', 'assets/map/map.json', null, Phaser.Tilemap.TILED_JSON);
+		Game.Main.load.image('world-tiles', 'assets/img/world-tiles.png');
+
+
+		//Spritesheet
+		Game.Main.load.spritesheet('link', 'assets/img/link.png', 28, 28);
+>>>>>>> f04b75167dcae3781294e5ad0bf62870748344e5
 	};
 
 	static create()
 	{
+		//Start game physics
+		Game.Main.physics.startSystem(Phaser.Physics.ARCADE);
+
 		//Add all states to game
 		for (let state of Game.States)
 		{

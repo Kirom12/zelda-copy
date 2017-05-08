@@ -13,6 +13,6 @@ class Character
 
 	update()
 	{
-
+		
 	};
 }
