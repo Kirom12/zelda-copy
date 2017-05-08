@@ -30,7 +30,8 @@ class Game
 
 	static preload()
 	{
-		
+		// Monster
+		Game.Main.load.spritesheet('monster', 'assets/img/ZeldaOverlordEnnemies.png',24,24);
 	};
 
 	static create()
