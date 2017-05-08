@@ -30,11 +30,20 @@ class Game
 
 	static preload()
 	{
-		
+		//Map
+		Game.Main.load.tilemap('main-map', 'assets/map/map.json', null, Phaser.Tilemap.TILED_JSON);
+		Game.Main.load.image('world-tiles', 'assets/img/world-tiles.png');
+
+
+		//Spritesheet
+		Game.Main.load.spritesheet('link', 'assets/img/link.png', 28, 28);
 	};
 
 	static create()
 	{
+		//Start game physics
+		Game.Main.physics.startSystem(Phaser.Physics.ARCADE);
+
 		//Add all states to game
 		for (let state of Game.States)
 		{
