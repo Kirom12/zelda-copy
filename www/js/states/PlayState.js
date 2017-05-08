@@ -12,6 +12,8 @@ class PlayState
 
 	create()
 	{
+		
+		
 		Log.Print("play - create");
 	};
 

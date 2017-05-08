@@ -30,7 +30,7 @@ class Game
 
 	static preload()
 	{
-
+		
 	};
 
 	static create()
