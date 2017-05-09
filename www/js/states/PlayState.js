@@ -12,7 +12,6 @@ class PlayState
 
 	create()
 	{
-
 		this.CreateMap();
 
 		this.Monster = new Monster(100, 100);

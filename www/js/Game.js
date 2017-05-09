@@ -42,6 +42,8 @@ class Game
 
 		// Monster
 		Game.Main.load.spritesheet('monster', 'assets/img/ZeldaOverlordEnnemies.png',24,24);
+		// bullet monster
+		Game.Main.load.spritesheet('bulletMonster', 'assets/img/ZeldaOverlordEnnemies.png',17,17);
 
 		//Map
 		Game.Main.load.tilemap('main-map', 'assets/map/map.json', null, Phaser.Tilemap.TILED_JSON);
