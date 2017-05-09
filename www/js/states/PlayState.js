@@ -12,15 +12,15 @@ class PlayState
 
 	create()
 	{
-<<<<<<< HEAD
+
 		this.Monster = new Monster(100,100);
 		
-=======
+
 		this.CreateMap();
 
 		this.Player = new Player(100, 100);
 
->>>>>>> f04b75167dcae3781294e5ad0bf62870748344e5
+
 		Log.Print("play - create");
 	};
 
@@ -43,10 +43,10 @@ class PlayState
 
 	update()
 	{
-<<<<<<< HEAD
+
 		this.Monster.update();
-=======
+
 		this.Player.update();
->>>>>>> f04b75167dcae3781294e5ad0bf62870748344e5
+
 	};
 }
