@@ -16,7 +16,7 @@ class PlayState
 		this.Monster = new Monster(100,100);
 		
 
-		this.CreateMap();
+		//this.CreateMap();
 
 		this.Player = new Player(100, 100);
 
