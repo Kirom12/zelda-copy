@@ -25,7 +25,16 @@ class Game
 		Game.States =
 		[
 			{name : 'play', obj : new PlayState()}
-		]
+		];
+
+		Game.Map =
+		{
+			marginTop : 192,
+			segmentWidth : 256*Game.rescaleFactor,
+			segmentHeight : 176*Game.rescaleFactor,
+			width : (256*Game.rescaleFactor)*3,
+			height : (176*Game.rescaleFactor)*3
+		};
 	};
 
 	static preload()
@@ -37,6 +46,7 @@ class Game
 		//Map
 		Game.Main.load.tilemap('main-map', 'assets/map/map.json', null, Phaser.Tilemap.TILED_JSON);
 		Game.Main.load.image('world-tiles', 'assets/img/world-tiles.png');
+		Game.Main.load.image('HitBox-terrainNoPassable', 'assets/img/HitBox-terrainNoPassable.png');
 
 
 		//Spritesheet
@@ -65,6 +75,6 @@ class Game
 
 	static render()
 	{
-
+		
 	};
 }
