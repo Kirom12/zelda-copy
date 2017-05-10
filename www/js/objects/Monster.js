@@ -37,6 +37,7 @@ class Monster extends Character
 		Game.Main.time.events.loop(Phaser.Timer.SECOND, this.updateCounter, this);
 
 		Game.Main.physics.enable(this.sprite,Phaser.Physics.ARCADE);
+		//this.sprite.body.collideWorldBounds = true;
 
 		//vitesse du monstre
     	this.speed = 2;
@@ -51,7 +52,7 @@ class Monster extends Character
 	{
 
 		//Toutes les 2 secondes, on défini une nouvelle direction et on reset le timer
-		if (this.timeDirectionRandom >= 2)
+		if (this.timeDirectionRandom >= 1)
 		{
 			this.direction = Math.round(Math.random()*4);
 			this.timeDirectionRandom = 0;

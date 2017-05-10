@@ -14,7 +14,7 @@ class PlayState
 	{
 		this.CreateMap();
 
-		this.Monster = new Monster(100, 100);
+		this.Monster = new Monster(300, 400);
 		this.Player = new Player(100, 100);
 
 		Log.Print("play - create");
@@ -50,7 +50,7 @@ class PlayState
 	update()
 	{
 		Game.Main.physics.arcade.collide(this.Player.Sprite, this.Layers.collision);
-		Game.Main.physics.arcade.collide(this.Monster.Sprite, this.Layers.collision);
+		Game.Main.physics.arcade.collide(this.Monster.sprite, this.Layers.collision);
 
 		this.Monster.update();
 
