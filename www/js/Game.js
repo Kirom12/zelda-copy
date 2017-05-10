@@ -53,6 +53,7 @@ class Game
 		//Spritesheet
 		Game.Main.load.spritesheet('link', 'assets/img/link.png', 28, 28);
 
+
 	};
 
 	static create()
