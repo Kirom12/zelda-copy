@@ -50,7 +50,6 @@ class Game
 		Game.Main.load.image('world-tiles', 'assets/img/world-tiles.png');
 		Game.Main.load.image('HitBox-terrainNoPassable', 'assets/img/HitBox-terrainNoPassable.png');
 
-
 		//Spritesheet
 		Game.Main.load.spritesheet('link', 'assets/img/link.png', 28, 28);
 

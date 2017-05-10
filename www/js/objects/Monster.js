@@ -8,6 +8,8 @@ class Monster extends Character
 	{
 		super(x, y, width, height);
 		this.sprite = Game.Main.add.sprite(x,y, 'monster');
+		
+		Game.Main.physics.enable(this.sprite, Phaser.Physics.ARCADE);
 
 		// les différentes animations du monstre
 		this.sprite.animations.add('left', [0,1]);
@@ -20,6 +22,8 @@ class Monster extends Character
 
 		this.sprite.scale.set(2);
     	this.sprite.smoothed = false;
+
+    	this.sprite.body.collideWorldBounds = true;
 
     	//weapon
     	this.weapon;
@@ -36,7 +40,6 @@ class Monster extends Character
     	// on compte chaque seconde pour la direction du monstre.
 		Game.Main.time.events.loop(Phaser.Timer.SECOND, this.updateCounter, this);
 
-		Game.Main.physics.enable(this.sprite,Phaser.Physics.ARCADE);
 
 		//vitesse du monstre
     	this.speed = 2;

@@ -66,6 +66,6 @@ class Player extends Character
 		this.x = this.Sprite.body.position.x;
 		this.y = this.Sprite.body.position.y;
 
-		console.log(this.Sprite.body.angle);
+		//console.log(this.Sprite.body.angle);
 	};
 }
