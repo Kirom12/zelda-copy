@@ -63,11 +63,6 @@ class PlayState
 	update()
 	{
 		Game.Main.physics.arcade.collide(this.Player.Sprite, this.Layers.collision);
-<<<<<<< HEAD
-		Game.Main.physics.arcade.collide(this.Monster.sprite, this.Layers.collision, this.PlayerMonsterCollide);
-=======
-		Game.Main.physics.arcade.collide(this.Monster.sprite, this.Layers.collision);
->>>>>>> 99af486b13bc9eda64a75dda948566f2e5a74cf8
 
 		this.Monster.update();
 

@@ -21,13 +21,13 @@ class Monster extends Character
 		this.sprite.anchor.set(0.5);
 
 		this.sprite.scale.set(2);
-    	this.sprite.smoothed = false;
+		this.sprite.smoothed = false;
 
-    	this.sprite.body.collideWorldBounds = true;
+		this.sprite.body.collideWorldBounds = true;
 
-    	//weapon
-    	this.weapon;
-    	this.weapon = Game.Main.add.weapon(10, 'bulletMonster');
+		//weapon
+		this.weapon;
+		this.weapon = Game.Main.add.weapon(10, 'bulletMonster');
 		// on détruit les balles quand elles sortent de l'écran
 		this.weapon.bulletKillType = Phaser.Weapon.KILL_WORLD_BOUNDS;
 		// vitesse de la balle
