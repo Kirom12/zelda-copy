@@ -55,7 +55,7 @@ class Monster extends Character
 		{
 			this.direction = Math.round(Math.random()*4);
 			this.timeDirectionRandom = 0;
-			//this.weapon.bulletAngleVariance = 360;
+			this.weapon.bulletAngleVariance = 360;
 			this.weapon.fire();
 
 		}
@@ -107,7 +107,7 @@ class Monster extends Character
 		{
 			this.direction = 1;
 		}
-		console.log(this.sprite.body.angle);
+		
 	};
 
 	updateCounter()
